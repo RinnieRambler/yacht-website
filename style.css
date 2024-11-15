@@ -9,3 +9,69 @@
 @tailwind utilities;
 
 /* Custom CSS */
+
+body {
+    color: #192841;
+}
+
+body *{
+    border-color: initial;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+@layer base {
+
+    h1, h2, h3, h4  {
+        @apply my-[0.75em];
+    }
+  
+    h1 {
+        @apply text-9xl uppercase leading-tight font-sans-bold;
+    }
+    h2 {
+        @apply text-6xl uppercase leading-tight font-sans-bold;
+    }
+    h3 {
+        @apply text-2xl uppercase leading-tight font-sans-bold;
+    }
+  
+    h4 {
+        @apply text-lg uppercase leading-tight font-sans-semibold;
+    }
+  
+    p {
+        @apply mb-[0.5em] leading-normal font-sans;
+    }
+  
+    a {
+        @apply font-sans-semibold uppercase;
+    }
+  
+  }
+
+  @layer components {
+
+    .text-light {
+       @apply text-[#f5f0ea];
+    }
+    .bg-light {
+        @apply bg-[#f5f0ea];
+    }
+  
+    .text-darkblue {
+       @apply text-[#192841];
+    }
+  
+    .border-darkblue {
+       @apply border border-[#192841];
+    }
+  
+    .bg-darkblue {
+      @apply bg-[#192841];
+    }
+  }
