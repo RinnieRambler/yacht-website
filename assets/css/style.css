@@ -480,6 +480,15 @@ a {
 .top-4 {
   top: 1rem;
 }
+.order-last {
+  order: 9999;
+}
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
 .block {
   display: block;
 }
@@ -488,6 +497,9 @@ a {
 }
 .grid {
   display: grid;
+}
+.hidden {
+  display: none;
 }
 .min-h-36 {
   min-height: 9rem;
@@ -515,6 +527,9 @@ a {
 }
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .items-center {
   align-items: center;

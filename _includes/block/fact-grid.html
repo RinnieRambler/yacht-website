@@ -1,26 +1,11 @@
-<section class="grid grid-cols-6">
-  <div>
-    <h2>01</h2>
-    <h4>lorem ipsum</h4>
+<section class="grid {% if block.grid-size == 'large' %} grid-cols-6 {% else %} grid-cols-3 {% endif %}">
+  {% for item in block.facts limit:6 %}
+  <div class="{% if block.grid-size == 'small' %} {% if forloop.index > 3 %} hidden {% endif %} {% endif %}">
+    <h2>{{item.number}}</h2>
+    <h4>{{item.description}}</h4>
+    {% if item.paragraph %}
+    <p>{{item.paragraph}}</p>
+    {% endif %}
   </div>
-  <div>
-    <h2>01</h2>
-    <h4>lorem ipsum</h4>
-  </div>
-  <div>
-    <h2>01</h2>
-    <h4>lorem ipsum</h4>
-  </div>
-  <div>
-    <h2>01</h2>
-    <h4>lorem ipsum</h4>
-  </div>
-  <div>
-    <h2>01</h2>
-    <h4>lorem ipsum</h4>
-  </div>
-  <div>
-    <h2>01</h2>
-    <h4>lorem ipsum</h4>
-  </div>
+  {% endfor %}
 </section>
