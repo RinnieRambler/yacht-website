@@ -504,6 +504,9 @@ a {
 .min-h-36 {
   min-height: 9rem;
 }
+.min-h-72 {
+  min-height: 18rem;
+}
 .min-h-\[50vh\] {
   min-height: 50vh;
 }
@@ -522,14 +525,14 @@ a {
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .items-center {
   align-items: center;
@@ -540,6 +543,9 @@ a {
 .justify-around {
   justify-content: space-around;
 }
+.gap-4 {
+  gap: 1rem;
+}
 .bg-cover {
   background-size: cover;
 }
@@ -548,6 +554,14 @@ a {
 }
 .p-20 {
   padding: 5rem;
+}
+.px-15p {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 .text-center {
   text-align: center;
@@ -560,7 +574,7 @@ a {
 /* Custom CSS */
 
 body {
-    color: #192841;
+    color: ;
 }
 
 body *{
@@ -571,4 +585,8 @@ button {
     padding: 0.5rem 1rem;
     margin: 1rem 0;
     text-transform: uppercase;
+}
+
+  .hover\:opacity-80:hover {
+  opacity: 0.8;
 }
