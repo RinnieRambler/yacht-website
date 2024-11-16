@@ -1,0 +1,12 @@
+<section>
+  <h2>options available</h2>
+  <div class="grid grid-cols-3">
+    {% for item in block.options limit:3 %}
+    <div>
+      <a class="aspect-square" style="background-image: ('{{item.image}}');">
+        <h4>{{item.subtitle}}</h4>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</section>

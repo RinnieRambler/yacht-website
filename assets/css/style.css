@@ -501,6 +501,9 @@ a {
 .hidden {
   display: none;
 }
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
 .min-h-36 {
   min-height: 9rem;
 }
