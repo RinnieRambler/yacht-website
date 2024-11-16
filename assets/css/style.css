@@ -522,6 +522,9 @@ a {
 .min-h-screen {
   min-height: 100vh;
 }
+.min-h-\[75vh\] {
+  min-height: 75vh;
+}
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -578,6 +581,9 @@ a {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 1;
+}
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 /* Custom CSS */
