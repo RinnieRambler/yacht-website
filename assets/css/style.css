@@ -489,6 +489,9 @@ a {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
 .block {
   display: block;
 }
@@ -536,6 +539,9 @@ a {
 }
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .items-center {
   align-items: center;
