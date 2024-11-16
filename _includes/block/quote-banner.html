@@ -1,3 +1,12 @@
-<section class="flex justify-center">
-  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam natus aliquam</h2>
+<section class="">
+
+  {% if block.subtitle %}
+    <h4>{{block.subtitle}}</h4>
+  {% endif %}
+
+  <h2>{{block.quote}}</h2>
+
+  {% if block.description %}
+    <p>{{block.description}}</p>
+  {% endif %}
 </section>

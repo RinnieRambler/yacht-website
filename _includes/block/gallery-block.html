@@ -1,14 +1,12 @@
 <section class="grid grid-cols-3 gap-4 py-24 px-15p ">
 
-  <div class="{% if block.options.image-size == 'wide' %} col-span-2 {% else %} col-span-1 {% endif %}">
     {% for item in block.options limit:7 %}
-    <a class="col-span-2 min-h-72 hover:opacity-80" style="background-image: url('{{item.background-image}}');">
+    <a class="{% if item.image-size == 'wide' %} col-span-2 {% else %} col-span-1 {% endif %} min-h-72 hover:opacity-80" style="background-image: url('{{item.background-image}}');">
       <div>
         <h4 class="text-white">{{item.title}}</h4>
       </div> 
     </a>
     {% endfor %}
-  </div>
 
 </section>
 
