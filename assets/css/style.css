@@ -474,6 +474,13 @@ a {
   font-family: barlow semi condensed, ui-sans-serif;
   text-transform: uppercase;
 }
+.text-light {
+  --tw-text-opacity: 1;
+  color: rgb(245 240 234 / var(--tw-text-opacity));
+}
+.relative {
+  position: relative;
+}
 .bottom-4 {
   bottom: 1rem;
 }
@@ -483,14 +490,14 @@ a {
 .order-last {
   order: 9999;
 }
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
 .col-span-3 {
   grid-column: span 3 / span 3;
-}
-.col-span-1 {
-  grid-column: span 1 / span 1;
 }
 .block {
   display: block;
@@ -513,8 +520,8 @@ a {
 .min-h-72 {
   min-height: 18rem;
 }
-.min-h-\[50vh\] {
-  min-height: 50vh;
+.min-h-\[75vh\] {
+  min-height: 75vh;
 }
 .min-h-\[90vh\] {
   min-height: 90vh;
@@ -522,8 +529,8 @@ a {
 .min-h-screen {
   min-height: 100vh;
 }
-.min-h-\[75vh\] {
-  min-height: 75vh;
+.w-full {
+  width: 100%;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -543,20 +550,26 @@ a {
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
 .items-center {
   align-items: center;
 }
 .justify-center {
   justify-content: center;
 }
+.justify-between {
+  justify-content: space-between;
+}
 .justify-around {
   justify-content: space-around;
 }
 .gap-4 {
   gap: 1rem;
+}
+.border-bluelight {
+  border-color: ;
+}
+.bg-bluedark {
+  background-color: ;
 }
 .bg-cover {
   background-size: cover;
@@ -567,20 +580,59 @@ a {
 .p-20 {
   padding: 5rem;
 }
+.p-5p {
+  padding: 5%;
+}
+.p-8 {
+  padding: 2rem;
+}
 .px-15p {
   padding-left: 15%;
   padding-right: 15%;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.pb-8 {
+  padding-bottom: 2rem;
+}
+.text-left {
+  text-align: left;
+}
 .text-center {
   text-align: center;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 1.2;
 }
 .text-4xl {
   font-size: 2.25rem;
   line-height: 1;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.text-bluedark {
+  color: ;
+}
+.text-bluelight {
+  color: ;
+}
+.text-light {
+  color: ;
+}
+.bg-blend-lighten {
+  background-blend-mode: lighten;
 }
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -602,6 +654,17 @@ button {
     text-transform: uppercase;
 }
 
+.expandButton span {
+    transition: all 3s;
+  }
+  
+.expandButton.active span{
+    transform: rotate(45deg);
+  }
+
   .hover\:opacity-80:hover {
   opacity: 0.8;
 }
+
+
+

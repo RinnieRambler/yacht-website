@@ -24,6 +24,15 @@ button {
     text-transform: uppercase;
 }
 
+.expandButton span {
+    transition: all 3s;
+  }
+  
+.expandButton.active span{
+    transform: rotate(45deg);
+  }
+  
+
 @layer base {
 
     h1, h2, h3, h4  {
@@ -75,3 +84,6 @@ button {
       @apply bg-[#192841];
     }
   }
+
+
+
