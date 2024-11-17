@@ -6,7 +6,7 @@
   </div>
   <div class="grid grid-cols-4 ">
     {% for item in block.image-block limit:4 %}
-    <a class="bg-grey min-h-[75vh] block hover:opacity-80" style="background-image: url('{{item.image}}');">
+    <a class="bg-grey min-h-[75vh] block hover:opacity-80 bg-cover bg-no-repeat bg-center" style="background-image: url('{{item.image}}');">
     <h4 class="text-white">{{item.title}}</h4>
     </a>
     {% endfor %}

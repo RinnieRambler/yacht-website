@@ -640,6 +640,9 @@ a {
 .bg-cover {
   background-size: cover;
 }
+.bg-\[50\%_50\%\] {
+  background-position: 50% 50%;
+}
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -786,6 +789,10 @@ button {
 
   .hover\:opacity-80:hover {
   opacity: 0.8;
+}
+
+  .hover\:opacity-0:hover {
+  opacity: 0;
 }
 
   .focus\:outline-none:focus {
