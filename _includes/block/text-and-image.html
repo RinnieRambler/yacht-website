@@ -1,5 +1,7 @@
-<section class="grid {% if block.image-aspect == 'landscape' %} grid-cols-5 {% else %} grid-cols-2 {% endif %} ">
-  <div class="{% if block.image-position == 'right' %} order-last {% endif %}  {% if block.image-aspect == 'landscape' %} col-span-3 {% endif %}" style="background-image: url('{{block.image}}'); aspect-ratio: 
+<section class="grid {% if block.image-aspect == 'landscape' %} grid-cols-5 {% else %} grid-cols-2 {% endif %} p-5p">
+  <div class="{% if block.image-position == 'right' %} order-last {% endif %}  {% if block.image-aspect == 'landscape' %} col-span-3 {% endif %} max-h-screen">
+
+  <div class="" style="background-image: url('{{block.image}}'); aspect-ratio: 
   {% case block.image-aspect %}
     {% when 'square' %} 1
     {% when 'portrait' %} 1/2
@@ -8,10 +10,12 @@
   {% endcase %}
   
   ;"></div>
-  <div class="{% if block.image-aspect == 'landscape' %} col-span-2 {% endif %}" >
+</div>
+  
+  <div class="{% if block.image-aspect == 'landscape' %} col-span-2 {% endif %} p-5p pr-10p" >
     <h3>{{block.subtitle}}</h3>
     <h2>{{block.heading}}</h2>
     <p>{{block.text}}</p>
-    <button>{{block.button-name}}</button>
+    <button class="{% if block.button.name %} border {% endif %}">{{block.button-name}}</button>
   </div>
 </section>

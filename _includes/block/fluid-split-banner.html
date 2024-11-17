@@ -1,0 +1,19 @@
+<section class="flex justify-between  p-5p">
+
+  <div class="max-h-[90vh] basis-96 {% if block.image-position == 'right' %} order-last {% endif %}  {% if block.image-aspect == 'landscape' %} col-span-3 {% endif %} grow max-h-screen" style="background-image: url('{{block.image}}');height: min-content; aspect-ratio: 
+  {% case block.image-aspect %}
+    {% when 'square' %} 1
+    {% when 'portrait' %} 1/2
+    {% when 'landscape' %} 2
+  
+  {% endcase %}
+  
+  ;"></div>
+  
+  <div class=" p-5p pr-10p grow basis-0" >
+    <h3>{{block.subtitle}}</h3>
+    <h2>{{block.heading}}</h2>
+    <p>{{block.text}}</p>
+    <button class="{% if block.button.name %} border {% endif %}">{{block.button-name}}</button>
+  </div>
+</section>

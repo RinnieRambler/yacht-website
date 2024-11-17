@@ -1,0 +1,20 @@
+<section class="lg:grid grid-cols-2 min-h-[75vh] border border-black p-10p">
+  <div class="max-w-96">
+    <h2>{{block.heading}}</h2>
+    <p>{{block.description}}</p>
+    <p>Phone: <a class="lowercase">{{block.phone}}</a></p>
+    <p>Location: <a class="capitalize" >{{block.location}}</a></p>
+    <p>Instagram: <a class="lowercase">{{block.instagram}}</a></p>
+    <p>Facebook: <a class="lowercase" >{{block.facebook}}</a></p>
+  </div>
+
+    <form class="p-10p">
+      <input type="text" id="name" name="name" placeholder="Name" class="block w-full bg-transparent border-b border-black placeholder:text-black placeholder:focus:text-gray-400 placeholder:uppercase placeholder:text-sm mb-4 focus:outline-none focus-visible:outline-none">
+      <input type="email" id="Email" name="Email" class="block w-full bg-transparent border-b border-black placeholder:text-black placeholder:focus:text-gray-400 placeholder:uppercase placeholder:text-sm mb-4 focus:outline-none focus-visible:outline-none" placeholder="Email" required>
+      <label for="Message" class="block uppercase text-sm text-black">Your message</label>
+      <textarea id="Message" name="Message" class="block w-full bg-transparent border border-black mb-4 focus:outline-none focus-visible:outline-none resize-none" rows="6" maxlength="3000" required></textarea>
+      <div class="text-right">
+        <input type="submit" value="Send" class="border border-black py-2 px-8 uppercase text-sm">
+      </div>
+    </form>
+</section>

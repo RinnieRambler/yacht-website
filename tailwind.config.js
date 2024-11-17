@@ -23,9 +23,9 @@ module.exports = {
       '9xl': ['8rem', '1'],
     },
     fontFamily: {
-      'sans': ['barlow', 'ui-sans-serif'],
-      'sans-semibold': ['barlow semi condensed', 'ui-sans-serif'],
-      'sans-bold': ['barlow condensed','ui-sans-serif'],
+      'sans': ['Barlow', 'ui-sans-serif'],
+      'sans-semibold': ['Barlow semi condensed', 'ui-sans-serif'],
+      'sans-bold': ['Barlow condensed','ui-sans-serif'],
     },
     colors: {
       bluedark: '',

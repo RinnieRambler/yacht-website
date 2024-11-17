@@ -1,6 +1,6 @@
-<section>
+<section class="p-10p text-center">
   <h2>{{block.heading}}</h2>
-  <div class="grid grid-cols-3">
+  <div class="grid grid-cols-3 gap-6">
     {% for item in block.options limit:3 %}
     <div>
       <a class="aspect-square block" style="background-image: url('{{item.image}}');">

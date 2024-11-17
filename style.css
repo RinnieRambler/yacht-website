@@ -43,10 +43,10 @@ button {
         @apply text-9xl uppercase leading-tight font-sans-bold;
     }
     h2 {
-        @apply text-6xl uppercase leading-tight font-sans-bold;
+        @apply text-5xl uppercase leading-loose font-sans-bold;
     }
     h3 {
-        @apply text-2xl uppercase leading-tight font-sans-bold;
+        @apply text-xl uppercase leading-tight font-sans-bold;
     }
   
     h4 {

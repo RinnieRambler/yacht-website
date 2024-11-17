@@ -1,14 +1,14 @@
-<section>
-  <div>
+<section class="p-10p m-auto text-center">
+  <div class="max-w-[50vw] m-auto ">
     <h4>{{block.subtitle}}</h4>
     <h2>{{block.heading}}</h2>
-    <p>{{block.text}}</p>
+    <p class="mb-5p">{{block.text}}</p>
   </div>
-  <div class="grid grid-cols-4">
+  <div class="grid grid-cols-4 ">
     {% for item in block.image-block limit:4 %}
-    <div class="bg-grey min-h-[75vh]" style="background-image: url('{{item.image}}');">
-    <h4>{{item.title}}</h4>
-    </div>
+    <a class="bg-grey min-h-[75vh] block hover:opacity-80" style="background-image: url('{{item.image}}');">
+    <h4 class="text-white">{{item.title}}</h4>
+    </a>
     {% endfor %}
 
   </div>

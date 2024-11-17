@@ -1,16 +1,21 @@
-<section>
-  <h2>{{block.heading}}</h2>
-  <h4>{{block.subtitle}}</h4>
-  <div></div>
-  <div class="grid grid-cols-3">
+<section class="p-10p ">
+  <h2 class="mb-0">{{block.heading}}</h2>
+  <h4 class="mb-[2.25rem]">{{block.subtitle}}</h4>
+<div class="flex justify-start">
+  {% for item in block.filters %}
+  <div class="pr-4 pb-4">{{item.title}}</div>
+  {% endfor %}
+</div>
+  <div class="grid grid-cols-3 gap-4">
 
     {% for item in block.yachts %}
-    <a class="bg-gray-400" style="background-image: url('{{item.image}}');">
+    <a class="bg-gray-400 min-h-40 aspect-square" style="background-image: url('{{item.image}}');">
       <h4>{{item.title}}</h4>
     </a>
+    
     {% endfor %}
   </div>
-  <button>lorem ipsum</button>
+  <button class="border ">lorem ipsum</button>
 </section>
 
 
