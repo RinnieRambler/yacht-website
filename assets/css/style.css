@@ -508,11 +508,11 @@ a {
 .mb-4 {
   margin-bottom: 1rem;
 }
-.mb-\[2\.25rem\] {
-  margin-bottom: 2.25rem;
-}
 .mb-5p {
   margin-bottom: 5%;
+}
+.mb-\[2\.25rem\] {
+  margin-bottom: 2.25rem;
 }
 .block {
   display: block;
@@ -709,13 +709,13 @@ a {
   font-size: 1.5rem;
   line-height: 1.2;
 }
-.text-sm {
-  font-size: 0.875rem;;
-  line-height: 1.2;
-}
 .text-4xl {
   font-size: 2.25rem;
   line-height: 1;
+}
+.text-sm {
+  font-size: 0.875rem;;
+  line-height: 1.2;
 }
 .font-semibold {
   font-weight: 600;
@@ -789,10 +789,6 @@ button {
 
   .hover\:opacity-80:hover {
   opacity: 0.8;
-}
-
-  .hover\:opacity-0:hover {
-  opacity: 0;
 }
 
   .focus\:outline-none:focus {
